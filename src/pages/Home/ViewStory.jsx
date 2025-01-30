@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ViewStory = () => {
   const location = useLocation(); // Retrieve the story data passed via navigate
@@ -41,12 +42,12 @@ const ViewStory = () => {
           <p className="text-lg text-gray-800 leading-relaxed">{story.story}</p>
 
           <div className="flex justify-center mt-6">
-            <a
-              href="/user-home"
+            <Link
+              to="/user-home"
               className="px-3 py-2 font-mono  bg-black text-white font-semibold  hover:bg-black hover:scale-105 transition-colors"
             >
               Back to home
-            </a>
+            </Link>
           </div>
         </div>
       </div>
