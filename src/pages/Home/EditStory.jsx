@@ -119,7 +119,7 @@ const EditStory = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="imageUrl" className="block text-sm font-medium text-gray-700">
-              Image URL (Optional)
+              Image URL (Don't Change)
             </label>
             <input
               type="text"
@@ -128,6 +128,7 @@ const EditStory = () => {
               onChange={(e) => setImageUrl(e.target.value)}
               placeholder="Enter image URL"
               className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg"
+              disabled
             />
             {imageUrl && (
               <img
